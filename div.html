@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    background: #020617;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Neon Box */
+.new {
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #00eaff, #14ffb0);
+    color: #001a22;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00eaff, 0 0 40px #14ffb0;
+    transition: 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+
+    /* Glow animation */
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* Hover effect */
+.new:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px #00eaff, 0 0 50px #14ffb0;
+}
+
+/* Glow pulsating animation */
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 15px #00eaff, 0 0 25px #14ffb0;
+    }
+    to {
+        box-shadow: 0 0 25px #00eaff, 0 0 55px #14ffb0;
+    }
+}
+
+</style>
+<body>
+    <a href="http://127.0.0.1:5500/hackathons/new.html">
+    <div class="new">Click Here! for redirect to Hackathon Project.</div></a>
+</body>
+</html>
