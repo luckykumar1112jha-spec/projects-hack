@@ -1,1 +1,1 @@
-# projects-hack
+# projects-hackathon
